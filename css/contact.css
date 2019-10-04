@@ -1,0 +1,401 @@
+/* --------------
+-----------------
+-----------------
+以下PC版
+-----------------
+-----------------
+----------------*/
+
+@media screen and (min-width: 641px) {
+/* 641px以上の幅の場合に適応される */
+
+	.sp_only {
+		display: none !important;
+	}
+	.pc_only {
+		display: block !important;
+    }
+
+
+	/*
+	header
+	*/
+	.header {
+		width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 100000;
+    }
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin-left: 50px;
+    }
+
+    .header_navi_wrapper {
+        margin-right: 50px;
+    }
+
+    .header_navi {
+        display: flex;
+    }
+
+    .header_navi_item {
+        margin-left: 38px;
+    }
+
+    .header_navi_item a{
+        text-decoration: none;
+
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .header_navi_item a:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    .header_navi_item a:hover::after {
+        transform: scale(1, 1);
+    }
+
+    /*
+	contact
+	*/
+    .contact {
+        background-color: #ffe7e7;
+    }
+
+    .contact_inner {
+        margin: 0px auto;
+        width: 640px;
+        padding: 120px 0 1px;
+    }
+
+    .contact_inner h2 {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    .page_explain {
+        margin-bottom: 60px;
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+        line-height: 1.5;
+    } 
+
+    .request {
+        margin-bottom: 20px;
+    }
+
+    .mail {
+        margin-bottom: 250px;
+    }
+
+
+   .php_form {
+       text-align: center;
+    }
+    
+    .php_form p {
+        border-bottom: 1px solid;
+        width: 320px;
+        margin: 0 auto 20px;
+        padding-bottom: 5px;
+        line-height: 1.5;
+        position: relative;
+    }
+    
+    .php_form p:before {
+        content: "";
+        position: absolute;
+        top: 54px;
+        left: 145px;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top: 8px solid #333;
+    }
+
+    .php_form img {
+         margin: 0 auto;
+         text-align: center;
+    }
+
+    /*
+	footer
+	*/
+    #footer {
+        background-color: #d3d3d3;
+    }
+
+    .footer_wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10px;
+    }
+
+    .footer_left {
+        width: 40%;
+    }
+
+    .footer_link {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .footer_link_text {
+        text-decoration: none;
+    }
+
+    .footer_link_item {
+        padding: 0 15px;
+        border-right: #000000 solid 1px;
+        margin-bottom: 10px;
+    }
+
+    .footer_link_item:nth-child(6) {
+        border: none;
+    }
+
+    .footer_link_item:nth-child(6) a {
+        text-decoration: line-through;
+    }
+
+    .sns_link {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sns_link li:nth-child(1) {
+        margin-left: 30px;
+    }
+
+    .sns_link img {
+        width: 40%;
+    }
+
+    .footer_right {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+/* --------------
+-----------------
+-----------------
+以下スマホ表示
+-----------------
+-----------------
+----------------*/
+@media screen and (max-width: 768px) {
+
+	.sp_only {
+        display: block !important;
+    }
+    .pc_only {
+        display: none !important;
+    }
+
+
+    /*
+	header
+	*/
+	.header {
+		width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 100000;
+    }
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .header_navi {
+        display: flex;
+    }
+
+    .header_navi_item {
+        margin-left: 10px;
+    }
+
+    .header_navi_item a{
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .header_navi_item a:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    .header_navi_item a:hover::after {
+        transform: scale(1, 1);
+    }
+
+   /*
+	contact
+	*/
+    .contact {
+        background-color: #fff3fe;
+    }
+
+    .contact_inner {
+        margin: 0px auto;
+        width: 90%;
+        padding: 100px 0 1px;
+    }
+
+    .contact_inner h2 {
+        font-size: 35px;
+        margin-bottom: 45px;
+        text-align: center;
+        padding-bottom: 2px;
+    }
+
+    .page_explain {
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+        line-height: 1.5;
+        text-align: center;
+        font-size: 15px;
+        width: 282px;
+        margin: 0 auto 60px;
+    } 
+
+    .request {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .mail {
+        margin-bottom: 240px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .php_form {
+       text-align: center;
+    }
+    
+    .php_form p {
+        border-bottom: 1px solid;
+        width: 320px;
+        margin: 0 auto 20px;
+        padding-bottom: 5px;
+        line-height: 1.5;
+        position: relative;
+    }
+    
+    .php_form p:before {
+        content: "";
+        position: absolute;
+        top: 54px;
+        left: 145px;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top: 8px solid #333;
+    }
+    
+    .php_form img {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*
+	footer
+	*/
+    #footer {
+        background-color: #d3d3d3;
+    }
+
+    .footer_wrapper {
+        margin: 0 auto;
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    .footer_left nav {
+        margin-bottom: 17px;
+    }
+
+    .footer_link {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .footer_link tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_link_item {
+        flex-basis: 48%;
+        padding: 7px 0;
+        text-align: center;
+        border: #333 solid 1px;
+    }
+
+    .footer_link_item:nth-of-type(1) {
+        flex-basis: 96.5%;
+    }
+
+    .footer_link_item:nth-child(6) a {
+        text-decoration: line-through;
+    }
+
+    .sns_link {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .sns_link {
+        text-align: center;
+    }
+
+    .sns_link img {
+        width: 60%;
+    }
+
+    .footer_right {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,400 @@
+/* --------------
+-----------------
+-----------------
+以下PC版
+-----------------
+-----------------
+----------------*/
+
+@media screen and (min-width: 641px) {
+/* 641px以上の幅の場合に適応される */
+
+	.sp_only {
+		display: none !important;
+	}
+	.pc_only {
+		display: block !important;
+	}
+
+    /*
+	main
+    */
+
+	/*
+	header
+	*/
+	.header {
+		width: 100%;
+		/* position: fixed; */
+		/* background-color: #ffffff; */
+		z-index: 10;
+        /* min-width: 960px; */
+        position: absolute;
+        top: 1.5%;
+    }
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_logo {
+        margin-left: 50px;
+    }
+    
+    .header_navi_wrapper {
+        margin-right: 50px;
+    }
+
+    .header_navi {
+        display: flex;
+    }
+    
+    .header_navi_item {
+        margin-right: 38px;
+    }
+    
+    .header_navi_item a{
+        text-decoration: none;
+        color: #FFF;
+        
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .header_navi_item a:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    a:hover::after {
+        transform: scale(1, 1);
+    }
+
+
+    .main {
+    }
+
+    .main_inner {
+        position: relative;
+    }
+
+    .main_wrapper {
+        
+    }
+
+    .main_txt {
+        position: absolute;
+        /* top: 82%; */
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 60px;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: 0.3px;
+        width: 585px;
+        color: #00000080;
+        border-bottom: solid 5px;
+    }
+
+    .main_img {
+        width: 100%;
+        height: 803px;
+
+
+        /* 画面一杯で表示できるよう改良する */
+        /* height: auto; */
+    }
+
+
+    /*
+	profile
+	*/
+    .profile {
+        background-color: #fff3fe;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff3fe+0,fff3fe+95,ffffff+100 */
+        background: rgb(255,243,254); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255,243,254,1) 0%, rgba(255,243,254,1) 95%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255,243,254,1) 0%,rgba(255,243,254,1) 95%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255,243,254,1) 0%,rgba(255,243,254,1) 95%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff3fe', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        
+        margin-top: -3px;
+    }
+
+    .profile_inner {
+        margin: 0px auto;
+        width: 640px;
+        padding: 50px 0 150px;
+    }
+
+    .profile_inner h2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+
+    .profile_box {
+        text-align: center;
+    }
+
+    .profile_img {
+        border-radius: 100%;
+        width: 30%;
+        margin-bottom: 30px;
+    }
+    
+    .profile_name_jp {
+        font-size: 30px;
+        width: 50%;
+        margin: 0 auto;
+        border-bottom: solid 3px;
+    }
+    
+    .profile_name_eg {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .profile_policy {
+        font-size: 20px;
+    }
+
+    .button_wrapper {
+        text-align: center;
+    }
+
+    .profile_inner a {
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 0;
+        width: 80%;
+        margin: 150px auto 0;
+
+        /*ベース*/
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
+
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        border: 2px solid #333;
+        color: #333;
+        line-height: 50px;
+        overflow: hidden;
+    }
+    
+    .profile_inner a:before,
+    .profile_inner a:after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+
+    .profile_inner a,
+    .profile_inner a:before,
+    .profile_inner a:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .profile_inner a:hover {
+        color: #333;
+    }
+
+    .profile_inner a:after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+    }
+
+    .profile_inner a:hover:after {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        background: rgba(81, 255, 226, 0.7);
+    }
+
+
+    /*
+	infomation
+	*/
+    .Work {
+        margin: 0px auto;
+        width: 640px;
+        padding: 50px 0 150px;
+    }
+
+    .Work_inner h2 {
+        font-size: 38px; 
+    }
+
+    .Work_inner a {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        border: #d3d3d3 solid;
+        padding: 10px 0;
+        width: 80%;
+        margin: 150px auto 0;
+        background-color: #000000;
+        color: #d3d3d3;
+    }
+    
+
+    /*
+	infomation
+	*/
+    .infomation {
+        margin: 0px auto;
+        width: 640px;
+        padding: 50px 0 100px;
+    }
+
+    .infomation_inner h2 {
+        font-size: 38px; 
+    }
+
+    .news_box {
+        margin-top: 30px; 
+    }
+
+    .news_item {
+        display: flex;
+        margin-bottom: 10px; 
+    }
+    
+    .news_date {
+        margin-left: 30px;
+        width: 110px;    
+    }
+
+    .news_connte {
+        margin-left: 100px;
+    }
+
+    .infomation a {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        border: #000000 solid;
+        padding: 10px 0;
+        width: 80%;
+        margin: 150px auto 0;
+        background-color: #000000;
+        color: #d3d3d3;
+    }
+
+
+    /*
+	blog
+	*/
+    .blog {
+        background: #000000;
+    }
+
+    .blog_inner {
+        margin: 0px auto;
+        width: 640px;
+        padding: 50px 0;
+        font-size: 38px;    
+    }
+
+    .blog_inner {
+        color: #FFF;
+    }
+
+    .blog_inner a {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        border: #d3d3d3 solid;
+        padding: 10px 0;
+        width: 80%;
+        margin: 50px auto 0;
+        background-color: #000000;
+        color: #d3d3d3;
+    }
+
+
+
+    /*
+	footer
+	*/
+    #footer {
+        background-color: #d3d3d3;
+    }
+
+    .footer_wrapper {
+        margin: 0 auto;
+        width: 1080px;
+        /* width: 1240px; */
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    
+    .footer_link {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer_link_text {
+        text-decoration: none;
+    }
+
+    .footer_link_item {
+        padding: 0 15px;
+        border-right: #000000 solid 1px;
+        margin-bottom: 10px;
+    }
+    
+    .footer_link_item:nth-child(5) {
+        border: none;
+    }
+
+    .sns_link {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sns_link li{
+    }
+
+	
+    .footer_right {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
+	.sp_only {
+        display: block !important;
+    }
+    .pc_only {
+        display: none !important;
+    }
+
+}

@@ -1,0 +1,476 @@
+/* --------------
+-----------------
+-----------------
+以下PC版
+-----------------
+-----------------
+----------------*/
+
+@media screen and (min-width: 641px) {
+/* 641px以上の幅の場合に適応される */
+
+	.sp_only {
+		display: none !important;
+	}
+	.pc_only {
+		display: block !important;
+    }
+
+
+	/*
+	header
+	*/
+	.header {
+		width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 100000;
+    }
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin-left: 50px;
+    }
+
+    .header_navi_wrapper {
+        margin-right: 50px;
+    }
+
+    .header_navi {
+        display: flex;
+    }
+
+    .header_navi_item {
+        margin-left: 38px;
+    }
+
+    .header_navi_item a{
+        text-decoration: none;
+
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .header_navi_item a:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    .header_navi_item a:hover::after {
+        transform: scale(1, 1);
+    }
+
+    /*
+	profile
+	*/
+    .profile {
+        background-color: #fff3fe;
+    }
+
+    .profile_inner {
+        margin: 0px auto;
+        width: 640px;
+        padding: 120px 0 173px;
+    }
+
+    .profile_inner h2 {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    .profile_box {
+        display: flex;
+        margin-bottom: 95px;
+        border-bottom: 1px solid;
+        padding-bottom: 30px;
+
+    }
+
+    .profile_left {
+        width: 30%;
+        text-align: center;
+    }
+
+    .profile_img {
+        border-radius: 100%;
+        width: 80%;
+    }
+
+    .profile_right {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    .profile_right ul {
+        width: 100%;
+    }
+
+    .profile_right li {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .profile_thing {
+        width: 30%;
+    }
+
+    .profile_content {
+        width: 70%;
+    }
+
+    .profile_under_line {
+        position: relative;
+        display: inline-block;
+        height: 1px;
+        width: 100px;
+        background-color: red;
+    }
+
+    .profile_under_line:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    .profile_under_line:hover::after {
+        transform: scale(1, 1);
+    }
+
+    .sns_wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .twitter_box {
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .twitter_wrapper {
+        text-align: center;
+        padding: 0 5px;
+    }
+
+
+    /*
+	footer
+	*/
+    #footer {
+        background-color: #d3d3d3;
+    }
+
+    .footer_wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10px;
+    }
+
+    .footer_left {
+        width: 40%;
+    }
+
+    .footer_link {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .footer_link_text {
+        text-decoration: none;
+    }
+
+    .footer_link_item {
+        padding: 0 15px;
+        border-right: #000000 solid 1px;
+        margin-bottom: 10px;
+    }
+    
+    .footer_link_item:nth-child(6) {
+        border: none;
+    }
+
+    .footer_link_item:nth-child(6) a {
+        text-decoration: line-through;
+    }
+
+    .sns_link {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sns_link li:nth-child(1) {
+        margin-left: 30px;
+    }
+
+    .sns_link img {
+        width: 40%;
+    }
+
+    .footer_right {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+
+/* --------------
+-----------------
+-----------------
+以下スマホ表示
+-----------------
+-----------------
+----------------*/
+@media screen and (max-width: 768px) {
+
+	.sp_only {
+        display: block !important;
+    }
+    .pc_only {
+        display: none !important;
+    }
+
+
+    /*
+	header
+	*/
+	.header {
+		width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 100000;
+    }
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .header_navi {
+        display: flex;
+    }
+
+    .header_navi_item {
+        margin-left: 10px;
+    }
+
+    .header_navi_item a{
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .header_navi_item a:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    .header_navi_item a:hover::after {
+        transform: scale(1, 1);
+    }
+
+    /*
+	profile
+	*/
+    .profile {
+        background-color: #fff3fe;
+    }
+
+    .profile_inner {
+        margin: 0px auto;
+        width: 90%;
+        padding: 100px 0 50px;
+    }
+
+    .profile_inner h2 {
+        font-size: 35px;
+        margin-bottom: 45px;
+        text-align: center;
+        width: 135px;
+        margin: 0 auto 45px;
+        padding-bottom: 2px;
+    }
+
+    .profile_box {
+        font-size: 35px;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+
+    .profile_left {
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .profile_img {
+        border-radius: 100%;
+        width: 80%;
+    }
+
+    .profile_right {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    .profile_right ul {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .profile_right li {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .profile_thing {
+        width: 20%;
+        font-size: 15px;
+    }
+
+    .profile_content {
+        width: 80%;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .profile_explain {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .profile_under_line {
+        position: relative;
+        display: inline-block;
+        height: 1px;
+        width: 100px;
+        background-color: red;
+    }
+
+    .profile_under_line:after{
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+    }
+
+    .profile_under_line:hover::after {
+        transform: scale(1, 1);
+    }
+    
+    .twitter_wrapper {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    /*
+	footer
+	*/
+    #footer {
+        background-color: #d3d3d3;
+    }
+
+    .footer_wrapper {
+        margin: 0 auto;
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    .footer_left nav {
+        margin-bottom: 17px;
+    }
+
+    .footer_link {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .footer_link tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_link_item {
+        flex-basis: 48%;
+        padding: 7px 0;
+        text-align: center;
+        border: #333 solid 1px;
+    }
+
+    .footer_link_item:nth-of-type(1) {
+        flex-basis: 96.5%;
+    }
+
+    .footer_link_item:nth-child(6) a {
+        text-decoration: line-through;
+    }
+
+    .sns_link {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .sns_link {
+        text-align: center;
+    }
+
+    .sns_link img {
+        width: 60%;
+    }
+
+    .footer_right {
+        text-align: center;
+    }
+
+}
