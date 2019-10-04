@@ -12,7 +12,7 @@ $(window).load(function () { //全ての読み込みが完了したら実行
   $('#wrapper').css('display', 'block');
 });
  
-//10秒たったら強制z的にロード画面を非表示
+//10秒たったら強制的にロード画面を非表示
 $(function(){
   setTimeout('stopload()',10000);
 });
