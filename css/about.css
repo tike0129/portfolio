@@ -168,14 +168,20 @@
 
     .twitter_box {
         display: flex;
-        width: 95%;
+        width: 104%;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
 
     .twitter_wrapper {
         text-align: center;
         padding: 0 5px;
+        margin-bottom: 50px
     }
+
+    /* .twitter_wrapper:nth-child(2n+1){
+        
+    } */
 
 
     /*
