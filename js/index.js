@@ -3,7 +3,11 @@ $(function() {
   var h = $(window).height();
  
   $('#wrapper').css('display','none');
-  $('#loader_wrapper ,#loader_inner').height(h).css('display','block');
+  $('#loader_wrapper ,#loader_wrapeer')
+    .height(h)
+    .css('display','block')
+    .css('z-index','999')
+    .css('position','relative');
 });
  
 $(window).load(function () { //全ての読み込みが完了したら実行
