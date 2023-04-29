@@ -171,6 +171,7 @@
         width: 104%;
         margin: 0 auto;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .twitter_wrapper {
