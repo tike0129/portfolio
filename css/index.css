@@ -981,7 +981,7 @@ Loader
       }
 
     /*  
-	link
+	Link
 	*/
     .link {
         background: #000000;
@@ -1006,6 +1006,35 @@ Loader
         color: #FFF;
         text-align: center;
         margin-top: 20px;
+    }
+
+    /* 
+	Information
+	*/
+    .infomation {
+        background: #fff;
+    }
+
+    .infomation_inner {
+        margin: 0px auto;
+        width: 90%;
+        padding: 50px 0 50px;
+    }
+
+    .infomation_inner h2 {
+        font-size: 38px; 
+        margin-bottom: 30px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .infomation_item {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .infomation_item .day{
+    }
+    .infomation_item .content{
     }
 
     /*
