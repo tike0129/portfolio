@@ -508,6 +508,10 @@ Loader
         margin-top: 25px;
     }
 
+    .infomation_item .pageLink {
+        color: #ff1515;
+    }
+
     /*
 	footer
 	*/
@@ -1032,9 +1036,15 @@ Loader
         margin-bottom: 10px;
         font-size: 16px;
     }
+
     .infomation_item .day{
     }
+    
     .infomation_item .content{
+    }
+    
+    .infomation_item .pageLink {
+        color: #ff1515;
     }
 
     /*
